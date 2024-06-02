@@ -1,0 +1,142 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    user-select: none;
+    font-weight: bolder;
+}
+.border{
+    border: 2px solid gray;
+    border-radius: 10px;
+    width: 250px;
+    margin-top: 7%;
+    margin-left: 40%;
+    background-color: rgb(65, 58, 58);
+}
+.display{
+    display: flex;
+    justify-content: center;
+
+}
+#display{
+    margin-top: 20px;
+    width: 80%;
+    padding: 20px;
+    height: 30px;
+    font-size: large;
+    border-radius: 6px;
+    border: none;
+    text-align: end;
+    background-color: lightgray;
+}
+.button{
+    padding: 9px 18px;
+    margin: 5px 13px;
+    border-radius: 30px;
+    border: none;
+    background-color: rgb(224, 217, 217);
+}
+.button:hover{
+    box-shadow: 0px 0px 3px 3px rgb(99, 93, 93);
+    color: rgb(255, 255, 255);
+    background-color: rgb(138, 111, 111);
+}
+.buttons-container{ 
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.layer1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+marquee{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    /* margin: 150px; */
+    width: 8    0%;
+    font-weight: bolder;
+    background-color: rgb(255, 0, 0);
+}
+#clear,.evaluate{
+    background-color:orange;
+}
+.operator{
+    background-color: rgb(153, 177, 65);
+}
+
+/* **************************** */
+h1 {
+    text-align: center;
+}
+
+#header-text {
+    text-align: center;
+    margin: 0px;
+    font-size: larger;
+    padding: 0px;
+}
+
+#header-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#header-media>span {
+    padding: 5px;
+    text-align: center;
+}
+
+#header-media>span>a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.footer_box-- {
+    border: 2px solid gray;
+    margin: 40px;
+    border-radius: 20px;
+
+}
+
+.footer_box--:hover {
+    background-color: dimgray;
+    transition: all 0.5s ease-out 0s;
+    color: wheat;
+    z-index: -2;
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    h1,
+    h2 {
+        color: rgb(255, 255, 255);
+        z-index: -2;
+    }
+
+    transform: rotateY(deg45);
+
+}
+
+.rotateX {
+    transform: rotateX(0deg);
+    transition: transform 0.5s ease;
+}
+
+.rotateX:hover {
+    transform: rotateX(25deg);
+
+}
+
+.footer_box-- img {
+    width: 27px;
+    padding: 6px;
+}

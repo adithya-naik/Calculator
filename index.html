@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="border">
+        <div class="display">
+            <input type="text" readonly id="display">
+        </div>
+        <div class="buttons-container">
+            <div class="layer1">
+                <button id="clear" class="button" onclick="
+                    displayValue = '';
+                    document.querySelector('#display').value =displayValue;
+                    ">C</button>
+                <button class="button" onclick="
+                    displayValue +='1';
+                    document.querySelector('#display').value =displayValue;
+                    ">1</button>
+                <button class="button" onclick="
+                    displayValue += '2';
+                    document.querySelector('#display').value =displayValue;
+                    ">2</button>
+            </div>
+            <div class="layer1">
+                <button class="button operator" onclick="
+                    displayValue += '+';
+                    document.querySelector('#display').value =displayValue;
+                    ">+</button>
+                <button class="button" onclick="
+                    displayValue  +='3';
+                    document.querySelector('#display').value =displayValue;
+                    ">3</button>
+                <button class="button" onclick="
+                    displayValue  +='4';
+                    document.querySelector('#display').value =displayValue;
+                    ">4</button>
+            </div>
+            <div class="layer1">
+                <button  class="button operator" onclick="
+                    displayValue += '-';
+                    document.querySelector('#display').value =displayValue;
+                    ">-</button>
+                <button class="button" onclick="
+                    displayValue  +='5';
+                    document.querySelector('#display').value =displayValue;
+                    ">5</button>
+                <button class="button" onclick="
+                    displayValue  +='6';
+                    document.querySelector('#display').value =displayValue;
+                    ">6</button>
+            </div>
+            <div class="layer1">
+                <button class="button operator" onclick="
+                    displayValue +='*';
+                    document.querySelector('#display').value =displayValue;
+                    ">*</button>
+                <button class="button" onclick="
+                    displayValue +='7';
+                    document.querySelector('#display').value =displayValue;
+                    ">7</button>
+                <button class="button" onclick="
+                    displayValue +='8';
+                    document.querySelector('#display').value =displayValue;
+                    ">8</button>
+            </div>
+            <div class="layer1">
+                <button class="button operator" onclick="
+                    displayValue  += '/';
+                    document.querySelector('#display').value =displayValue;
+                    ">/</button>
+                <button class="button" onclick="
+                    displayValue  +='0';
+                    document.querySelector('#display').value =displayValue;
+                    ">0</button>
+                <button class="button" onclick="
+                    displayValue  +='9';
+                    document.querySelector('#display').value =displayValue;
+                    ">9</button>
+            </div>
+            <div class="layer1">
+
+                <button class="button" onclick="
+                displayValue  += '.';
+                document.querySelector('#display').value =displayValue;
+                ">.</button>
+                <button class="button evaluate" onclick="
+                displayValue  = eval(displayValue);
+                document.querySelector('#display').value =`${displayValue}`;
+                ">=</button>
+
+            </div>
+        </div>
+    </div>
+    <div class="hover">
+        <div class="footer_box-- lower rotateX">
+            <h2>CLONED BY..</h2>
+            <div class="">
+                <section>
+                    <div id="header-text">
+                        <h1><b>JATOTH ADITHYA NAIK</b></h1>
+                        <!-- <h3>Intern at CodeAlpha</h3> -->
+                    </div>
+                    <div id="header-media">
+                        <span><a target="_blank" href=""><img src="images/extras/mail.svg" alt="mail">
+                                jatothadithyanaik@gmail.com</a></span>
+                        <span><a target="_blank" href="https://www.linkedin.com/in/adithyanaik/"><img
+                                    src="images/extras/linkedin.svg" alt="linkdein"> adithyanaik</a></span>
+                        <span><a target="_blank" href="https://github.com/adithya-naik"><img
+                                    src="images/extras/github.svg" alt="github"> adithya-naik</a></span>
+                        <span><a target="_blank" href="https://www.codechef.com/users/adithyaj219"><img
+                                    src="images/extras/codechef.svg" alt="codechef"> adithyaj219</a></span>
+                        <span><a target="_blank" href=""><img src="images/extras/location.svg" alt="location">
+                                Hyderabad</a></span>
+                    </div>
+                </section>
+            </div>
+        </div>
+<marquee behavior="" direction="">NOTE : Works faulty when you insert leading Zero's ...Hence, avoid using them</marquee>
+    <script>
+        let displayValue = '';
+        document.querySelector('#display').value = displayValue;
+    </script>
+</body>
+
+</html>
